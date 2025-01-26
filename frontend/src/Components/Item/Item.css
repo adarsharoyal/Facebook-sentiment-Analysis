@@ -1,0 +1,38 @@
+.item{
+    width: 280px;
+}
+.item p{
+    margin: 6px 0px;
+    width: 80px;
+}
+.item:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+.item img {
+        max-width: 280px; /* Set a max width (adjust as needed) */
+        max-height: 250px; /* Set a max height (adjust as needed) */
+        width: auto; /* Maintain aspect ratio */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Round the corners of the images */
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .item:hover .overlay {
+    opacity: 1;
+  }
